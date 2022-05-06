@@ -5,31 +5,39 @@
     <title>Search</title>
 
     <style>
-        form {
-            text-align: left;
-        }
 
-        label {
-            padding: 50px;
-        }
+
         body {
-              font-family: arial,sans-serif;
+            font-family: Roboto,arial,sans-serif;
         }
-        
 
         h1 {
-            text-align: left;
-            color: #f28b82;
+            color: #d93025;
         }
-
-        input {
-            padding: 10px;
-        }
-
         input[type=submit] {
             background-color: rgb(4, 4, 246);
             color: white;
+            height: 35px;
+            width: 150px;
+            font-size:medium;
         }
+
+        label {
+            width: 240px;
+            display: inline-block;
+            padding-left: 30px;
+        }
+
+        #pad {
+            padding:6px;
+
+        }
+
+        img {
+            width:7%;
+
+        }
+        
     </style>
 </head>
 
@@ -38,32 +46,53 @@
 
         <a href="index.html"> Google Search</a>
     </div>
+    <div id="pad"></div>
+    <div id="pad"></div>
+    <div id="pad"></div>
+    <img src="googleLogo.png">
+
     <h1> Advanced Search </h1>
+    <div id="pad"></div>
+
+
+    <div> <h2> Find pages with... </h2> </div>
+
     <form action="https://www.google.com/search">
+
+        <div id="row"> </div>
 
         <div>
         
             <label for="allWords">all these words: </label>
             <input id="allWords" type="text" name="q">
             
+            
         </div>
+
+        <div id="pad" ></div>
         
         <div>
              <label for="ExactPhrase">this exact word or phrase: </label> 
              <input id="ExactPhrase" type="text" name="as_epq"> 
         </div>
 
+        <div id="pad"></div>
+
         <div>
-            <label for="AnyWords" >any of these words: </label>
+            <label  for="AnyWords" >any of these words: </label>
             <input id="AnyWords" type="text" name="as_oq">
         </div>
 
+        <div id="pad"></div>
         <div>
             <label for="NoneWords" >none of these words: </label>
             <input id="NoneWords" type="text" name="as_eq">
         </div>
 
-        <div></div>
+        <div id="pad"></div>
+
+        <div id="pad"></div>
+        <div id="pad"></div>
 
         <div>
             <input type="submit" value="Advanced Search">
